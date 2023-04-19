@@ -43,12 +43,12 @@ classes = ["background", "aeroplane", "bicycle", "bird", "boat", "bottle",
 bbox_colors = np.random.uniform(255, 0, size=(len(categories), 3))
 
 
-image = cv2.imread('test4.jpg')
+image = cv2.imread('test4_k.jpg')
 # Capture the frame's height and width
 orig_img_size = image.shape[:2]
 
 # resize image
-percent=50
+percent=100
 width = int(image.shape[1] / 100 * percent)
 height = int(image.shape[0] / 100 * percent)
 dim = (width, height)
